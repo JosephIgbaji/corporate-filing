@@ -31,8 +31,8 @@ const persistConfig = {
   version: 1,
   transforms: [
     encryptTransform({
-      // secretKey: import.meta.env.VITE_REACT_APP_ENCRYPT_KEY,
-      secretKey: k,
+      secretKey: import.meta.env.VITE_REACT_APP_ENCRYPT_KEY,
+      // secretKey: k,
       onError: function (error) {
         console.log(error);
       },

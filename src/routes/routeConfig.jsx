@@ -42,8 +42,7 @@ const RouterConfig = () => {
           <Route path={routes.CASES} element={<Cases />} /> */}
           {/* <Route path={routes.REPORTS} element={<Reports />} />
           <Route path={routes.NOTIFICATIONS} element={<Reports />} /> */}
-          {/* <Route path={routes.SETTINGS} element={<Settings />} />
-          <Route path={routes.HELP} element={<Help />} /> */}
+
           <Route path={"*"} element={<Navigate to={"/signin"} />} />
         </Route>
       </Routes>

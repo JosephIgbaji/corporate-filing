@@ -1,6 +1,6 @@
-import { scale, corporate } from "../../assets";
+import { corporate } from "../../assets";
 import { Link } from "react-router-dom";
-import { REGISTER, DASHBOARD } from "../../routes/constants";
+import { REGISTER, DASHBOARD, OVERVIEW } from "../../routes/constants";
 import { useEffect } from "react";
 import { Form, Field } from "react-final-form";
 import { useLoginUserMutation } from "../../service/user.service";
@@ -41,7 +41,7 @@ function Login() {
   useEffect(() => {
     if (isSuccess) {
       showAlert("", "Login Successful!", "success");
-      navigate(DASHBOARD);
+      navigate(OVERVIEW);
     } else if (error) {
       showAlert("Oops", error.data.message || "An error occurred", "error");
     }
