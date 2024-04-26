@@ -6,5 +6,5 @@ export { default as Reports } from "./dashboard/Reports";
 export { default as Notifications } from "./dashboard/Notifications";
 export { default as Settings } from "./dashboard/Settings";
 export { default as Help } from "./dashboard/Help";
-export { default as CaseDetails } from "./dashboard/[id]";
+export { default as ApplicationDetails } from "./dashboard/[id]";
 export { default as UpcomingTasks } from "./dashboard/UpcomingTasks";

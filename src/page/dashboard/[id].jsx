@@ -11,7 +11,7 @@ import { useGetAllEntityQuery } from "../../service/allEntity.service";
 import { useParams } from "react-router-dom";
 import { ShimmerPostDetails } from "react-shimmer-effects";
 
-const CaseDetails = () => {
+const ApplicationDetails = () => {
   // const { params } = useParams();
   const { id } = useParams();
   const { data: entity } = useGetAllEntityQuery();
@@ -404,4 +404,4 @@ const CaseDetails = () => {
   );
 };
 
-export default CaseDetails;
+export default ApplicationDetails;

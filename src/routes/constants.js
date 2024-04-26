@@ -8,5 +8,5 @@ export const REPORTS = "/dashboard/reports";
 export const NOTIFICATIONS = "/dashboard/notifications";
 export const SETTINGS = "/dashboard/settings";
 export const HELP = "/dashboard/help";
-export const CASEDETAIL = "/dashboard/aplications/:id";
+export const APPLICATIONDETAIL = "/dashboard/aplications/:id";
 export const UPCOMINGTASKS = "/dashboard/upcoming-tasks";

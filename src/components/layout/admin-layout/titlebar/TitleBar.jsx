@@ -25,8 +25,6 @@ const TitleBar = () => {
       return "Application Overview";
     } else if (pathname.includes(id)) {
       return "Aplication summary";
-    } else if (pathname.includes("cases")) {
-      return "Applications";
     } else if (pathname.includes("upcoming-task")) {
       return "Upcoming Tasks";
     } else if (pathname.includes("settings")) {
