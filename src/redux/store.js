@@ -22,13 +22,17 @@ const rootReducer = combineReducers({
   [apiSlice.reducerPath]: apiSlice.reducer,
 });
 
+const k =
+  "%$gdhddjhf^^&ggdhhfhfhjdjdggdh7476ygh&^T%%&ggdhd764747hrYR$%^((hgdhdgg))gfgfhd";
+
 const persistConfig = {
   key: "root",
   storage,
   version: 1,
   transforms: [
     encryptTransform({
-      secretKey: import.meta.env.VITE_REACT_APP_ENCRYPT_KEY,
+      // secretKey: import.meta.env.VITE_REACT_APP_ENCRYPT_KEY,
+      secretKey: k,
       onError: function (error) {
         console.log(error);
       },
