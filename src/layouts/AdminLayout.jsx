@@ -5,7 +5,6 @@ import { sidebarItems } from "../constants";
 
 const AdminLayout = () => {
   return (
-    // <div className="flex flex-row h-screen max-w-[1980px] mx-auto overflow-hidden">
     <div className="flex flex-row h-screen w-full mx-auto overflow-hidden overflow-y-scroll bg-[#eeeeee]">
       <Sidebar sidebarItems={sidebarItems} />
       <div className="flex-1 flex flex-col">

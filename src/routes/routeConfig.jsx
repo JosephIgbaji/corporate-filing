@@ -1,15 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import {
-  Register,
-  Login,
-  ApplicationDetails,
-  Cases,
-  Overview,
-  Reports,
-  Settings,
-  Help,
-  UpcomingTasks,
-} from "../page";
+import { Register, Login, ApplicationDetails, Overview } from "../page";
 // import { ProtectedRoute } from "../guards";
 import { AdminLayout } from "../layouts";
 
@@ -38,11 +28,6 @@ const RouterConfig = () => {
             path={routes.APPLICATIONDETAIL}
             element={<ApplicationDetails />}
           />
-          {/* <Route path={routes.UPCOMINGTASKS} element={<UpcomingTasks />} />
-          <Route path={routes.CASES} element={<Cases />} /> */}
-          {/* <Route path={routes.REPORTS} element={<Reports />} />
-          <Route path={routes.NOTIFICATIONS} element={<Reports />} /> */}
-
           <Route path={"*"} element={<Navigate to={"/signin"} />} />
         </Route>
       </Routes>

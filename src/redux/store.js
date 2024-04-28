@@ -22,7 +22,7 @@ const rootReducer = combineReducers({
   [apiSlice.reducerPath]: apiSlice.reducer,
 });
 
-const k =
+const pk =
   "%$gdhddjhf^^&ggdhhfhfhjdjdggdh7476ygh&^T%%&ggdhd764747hrYR$%^((hgdhdgg))gfgfhd";
 
 const persistConfig = {

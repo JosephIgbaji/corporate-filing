@@ -154,7 +154,7 @@ function Login() {
         </div>
       </section>
 
-      <section className="bg-project-forest-green min-h-screen flex flex-col justify-center items-center sm:hidden md:hidden lg:hidden">
+      <section className="bg-project-forest-green h-screen flex flex-col justify-center items-center sm:hidden">
         <div className="flex flex-col items-center gap-5 pt-5">
           <img
             src={corporate}
