@@ -11,6 +11,27 @@ import PublicRoute from "../components/protected/PublicRoute";
 const RouterConfig = () => {
   return (
     <>
+      {/* <Routes>
+        <Route path={routes.REGISTER} element={<Register />} />
+        <Route
+          path={routes.LOGIN}
+          element={<PublicRoute component={Login} />}
+        />
+        <Route path={"/"} element={<Navigate to={"/signin"} />} />
+        <Route
+          path={routes.DASHBOARD}
+          element={<ProtectedRoute component={AdminLayout} />}
+        >
+          <Route index element={<Navigate to={"/dashboard/overview"} />} />
+          <Route path={routes.OVERVIEW} element={<Overview />} />
+
+          <Route
+            path={routes.APPLICATIONDETAIL}
+            element={<ApplicationDetails />}
+          />
+          <Route path={"*"} element={<Navigate to={"/signin"} />} />
+        </Route>
+      </Routes> */}
       <Routes>
         <Route path={routes.REGISTER} element={<Register />} />
         <Route
@@ -24,10 +45,13 @@ const RouterConfig = () => {
         >
           <Route index element={<Navigate to={"/dashboard/overview"} />} />
           <Route path={routes.OVERVIEW} element={<Overview />} />
-          <Route
-            path={routes.APPLICATIONDETAIL}
-            element={<ApplicationDetails />}
-          />
+          {/* <Route path={routes.UPCOMINGTASKS} element={<UpcomingTasks />} />
+          <Route path={routes.CASES} element={<Cases />} />
+          <Route path={routes.CASEDETAIL} element={<CaseDetails />} /> */}
+          {/* <Route path={routes.REPORTS} element={<Reports />} />
+          <Route path={routes.NOTIFICATIONS} element={<Reports />} /> */}
+          {/* <Route path={routes.SETTINGS} element={<Settings />} />
+          <Route path={routes.HELP} element={<Help />} /> */}
           <Route path={"*"} element={<Navigate to={"/signin"} />} />
         </Route>
       </Routes>
